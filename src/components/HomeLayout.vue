@@ -35,12 +35,12 @@
             </v-col>
 
             <v-col
-              v-for="j in 6"
-              :key="`${n}${j}`"
+              v-for="book in category.books"
+              :key="book.primary_isbn"
               cols="6"
               md="2"
             >
-              <v-sheet height="150"></v-sheet>
+              <h1>{{ book.title }}</h1>
             </v-col>
           </template>
         </v-row>
